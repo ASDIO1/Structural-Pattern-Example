@@ -61,8 +61,6 @@ namespace ShippingCompany
             package2.Send();
 
             Console.ReadKey();
-            // Todas las clases forman parte de este patron de disenio, excepto Client y sus hijos,
-            // porque son clases que vi conveniente tener, segun el negocio que se esta modelando.
         }
     }
 }
