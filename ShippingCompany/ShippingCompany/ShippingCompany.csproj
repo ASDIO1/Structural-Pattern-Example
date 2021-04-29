@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="CommonPackage.cs" />
-    <Compile Include="ITransportMedium.cs" />
-    <Compile Include="Package.cs" />
+    <Compile Include="ShippingByBus.cs" />
+    <Compile Include="Clients\Client.cs" />
+    <Compile Include="FragilePackage.cs" />
+    <Compile Include="Packages\CommonPackage.cs" />
+    <Compile Include="IShippingMedium.cs" />
+    <Compile Include="Packages\Package.cs" />
+    <Compile Include="ShippingByPlane.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Clients\Receiver.cs" />
+    <Compile Include="Clients\Sender.cs" />
+    <Compile Include="ShippingByTrain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,7 +11,7 @@ namespace ShippingCompany
         public string Subject { get; set; }
         public Client Sender { get; set; }
         public Client Receiver { get; set; }
-        public ITransportMedium PackageTransporter { get; set; }
+        public IShippingMedium PackageTransporter { get; set; }
 
 
         public abstract void Send();

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShippingCompany
 {
-    class Person
+    class FragilePackage : Package
     {
+        public override void Send()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

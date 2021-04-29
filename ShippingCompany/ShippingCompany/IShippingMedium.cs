@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ShippingCompany
 {
-    public interface ITransportMedium
+    public interface IShippingMedium
     {// ABSTRAER TODOS ESTOS DATOS EN UNA CLASE PERSONA O ALGO ASI
-        void TransportPackage(Client sender, Client receiver);
+        void SendPackage(Client sender, Package package, Client receiver);
     }
 }

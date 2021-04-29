@@ -10,11 +10,12 @@ namespace ShippingCompany
     {
         static void Main(string[] args)
         {
-            //hacer que el cliente envie el paquete y hacer envios por avion, por bus, etc.  tambien agregar precio
-            //
-            //
-            //
+            // 1 Instantiating Shipping Mediums
+            IShippingMedium plane = new ShippingByPlane();
+            IShippingMedium bus = new ShippingByBus();
+            IShippingMedium train = new ShippingByTrain();
 
+            // 2 Instantiating a Sender client & a Receiver client
             Client sender = new Sender() 
             { 
                 IdCard = 1234,
@@ -30,15 +31,33 @@ namespace ShippingCompany
                 Phone = 0395382
             };
 
+            // 3 Instantiating and Sending Package #1 (common)
             Package package1 = new CommonPackage()
             {
                 Subject = "I hope you like this gift",
                 Sender = sender,
                 Receiver = receiver
-                //PackageTransporter = plane
             };
+            package1.PackageTransporter = bus;
+            package1.Send();
 
+            package1.PackageTransporter = plane;
+            package1.Send();
 
+            package1.PackageTransporter = train;
+            package1.Send();
+
+            // 4 Instantiating and Sending Package #2 (fragile)
+            Package package2 = new FragilePackage()
+            {
+                Subject = "I hope you like this gift",
+                Sender = sender,
+                Receiver = receiver
+            };
+            package2.PackageTransporter = plane;
+            package2.Send();
+
+            
         }
     }
 }
