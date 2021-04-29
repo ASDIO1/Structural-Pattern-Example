@@ -10,7 +10,12 @@ namespace ShippingCompany
     {
         public override void Send()
         {
-            throw new NotImplementedException();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("COMMON PACKAGE:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("This is a COMMON package being sent normaly");
+            PackageTransporter.SendPackage(this);
+            Console.WriteLine("-------------------------------------------\n");
         }
     }
 }

@@ -8,9 +8,18 @@ namespace ShippingCompany
 {
     class ShippingByPlane : IShippingMedium
     {
-        public void SendPackage(Client sender, Package package, Client receiver)
+        public void SendPackage(Package package)
         {
-            throw new NotImplementedException();
+            StringBuilder sendingMessage = new StringBuilder();
+            sendingMessage.Append($"Sending package by PLANE...");
+            sendingMessage.Append($"\nfrom: {package.Sender.FirstNames}");
+            sendingMessage.Append($"\nto: {package.Receiver.FirstNames}");
+            sendingMessage.Append($"\nSubject: {package.Subject}");
+            sendingMessage.Append($"\nThe PLANE may take from 30 minutes to 4 hours until the package shipping is done");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(sendingMessage);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

@@ -10,7 +10,13 @@ namespace ShippingCompany
     {
         public override void Send()
         {
-            throw new NotImplementedException();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("FRAGILE PACKAGE:");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.WriteLine("This is a FRAGILE package being sent carefully");
+            PackageTransporter.SendPackage(this);
+            Console.WriteLine("-------------------------------------------\n");
         }
     }
 }

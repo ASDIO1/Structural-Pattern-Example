@@ -50,14 +50,19 @@ namespace ShippingCompany
             // 4 Instantiating and Sending Package #2 (fragile)
             Package package2 = new FragilePackage()
             {
-                Subject = "I hope you like this gift",
+                Subject = "Happy holidays",
                 Sender = sender,
                 Receiver = receiver
             };
             package2.PackageTransporter = plane;
             package2.Send();
 
-            
+            package2.PackageTransporter = bus;
+            package2.Send();
+
+            Console.ReadKey();
+            // Todas las clases forman parte de este patron de disenio, excepto Client y sus hijos,
+            // porque son clases que vi conveniente tener, segun el negocio que se esta modelando.
         }
     }
 }

@@ -8,6 +8,6 @@ namespace ShippingCompany
 {
     public interface IShippingMedium
     {// ABSTRAER TODOS ESTOS DATOS EN UNA CLASE PERSONA O ALGO ASI
-        void SendPackage(Client sender, Package package, Client receiver);
+        void SendPackage(Package package);
     }
 }
