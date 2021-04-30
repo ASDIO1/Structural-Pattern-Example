@@ -4,7 +4,8 @@ For this example I chose to use the **Bridge** structural pattern
 
 ## Table of contents
 
-- [Problem](#problem)
+- [Thematic](#thematic)
+- [Solution](#solution)
 - [Program usage guide](#program-usage-guide)
 - [Documentation](#documentation)
 - [Aclarations](#aclarations)
@@ -43,6 +44,7 @@ The main program (program.cs) consist of:
 -  For each kind of package I run the "Send()" method which will be excecuted differently for each package and each shipping medium following the **Bridge** structural pattern
 
 This process is in the main program (program.cs).
+The results of the example are presented in the console that is opened when running the solution (.sln) file.
 
 
 ## Documentation
