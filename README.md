@@ -7,11 +7,11 @@ For this example I chose to use the **Bridge** structural pattern
 
 - [Thematic](#thematic)
 - [Solution](#solution)
-- [Program usage guide](#program-usage-guide)
+- [Program guide](#program-guide)
 - [Documentation](#documentation)
 - [Aclarations](#aclarations)
 
-## Thematic(#table-of-contents)
+## Thematic
 
 The thematic that I proposed for this project is about a shipping company based in Bolivian shipping companies.
 
@@ -21,7 +21,7 @@ The shipping can be done by plane, bus or train and the packages are clasified i
 
 So resuming this thematic, each type of package needs the sender and receiver client information and the package can be shipped by plane, bus or train.
 
-## Solution(#table-of-contents)
+## Solution
 
 I decided to implement a program for the thematic mentioned using the **Bridge** structural pattern.
 
@@ -32,7 +32,7 @@ The example where I use the Bridge pattern is coded in the main program (program
 I wont be explaining the details of the program here, because in this repository are included a class diagram for the project and a sequence diagram of the main program (program.cs) which are very self explanatory.
 
 
-## Program usage guide(#table-of-contents)
+## Program guide
 
 Run this program with a C# compiler.
 
@@ -50,10 +50,10 @@ This process is in the main program (program.cs).
 The results of the example are presented in the console that is opened when running the solution (.sln) file.
 
 
-## Documentation(#table-of-contents)
+## Documentation
 
 This repository includes images of a "Classes diagram" and a "Sequence diagram" of the main program.
 
-## Aclarations(#table-of-contents)
+## Aclarations
 
 -  As the main program is very simple and consists of creating instances and running the "Send()" method, the sequence diagram is very simple and a bit weird but I think it represents the main program pretty well.
