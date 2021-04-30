@@ -1,5 +1,6 @@
 # Structural-Pattern-Example
 Simple example of structural patterns for studying purposes.
+
 For this example I chose to use the **Bridge** structural pattern
 
 ## Table of contents
