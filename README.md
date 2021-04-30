@@ -57,3 +57,5 @@ This repository includes images of a "Classes diagram" and a "Sequence diagram" 
 ## Aclarations
 
 -  As the main program is very simple and consists of creating instances and running the "Send()" method, the sequence diagram is very simple and a bit weird but I think it represents the main program pretty well.
+
+-  Some classes are distributed in the "clients"and "packages" folders and the other classes are not in folders.
